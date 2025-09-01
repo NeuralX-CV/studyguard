@@ -2,11 +2,10 @@ StudyGuard – AI Classroom Monitoring System
 A real-time classroom monitoring system using computer vision and deep learning to automate attendance logging and analyze student behavior. StudyGuard provides educators with valuable insights into classroom dynamics, ensuring an engaging and efficient learning environment.
 
 Features
-Real-time Face Recognition: Accurately identifies multiple students (tested for 60-70+) in a live video stream for automated entry/exit tracking.
+Real-time Face Recognition: Accurately identifies multiple students in a live video stream .
 
 Automated Attendance Logging: Generates a detailed CSV report with student roll number, name, elective, date, entry time, and total time spent in the classroom.
 
-Student Behavior Analysis: A modular, simulated 3D-CNN analyzes student actions like hand-raising and standing. The design allows for a real deep learning model to be easily integrated.
 
 High Performance: Optimized to process frames at intervals, ensuring smooth operation even on less powerful hardware like a Raspberry Pi 5.
 

@@ -31,20 +31,26 @@ Project Structure
 The project is organized into a clean, modular structure:
 
 studyguard/
-├── main.py                 # Main entry point to run the application
-├── controller.py           # Core controller that orchestrates the system
-├── face_manager.py         # Handles loading student data and face encodings
-├── student_tracker.py      # Manages the real-time state of each student
-├── behavior_analyzer.py    # Simulates student behavior analysis
-├── utils.py                # Contains helper functions (e.g., report generation)
-|
-├── student_images/         # Directory for student images (e.g., 101.jpg)
-│   ├── 101.jpg
-│   └── ...
-|
-├── students_db.csv         # CSV database with student information
-└── requirements.txt        # Required Python packages
 
+│-- main.py # Main entry point to run the application
+
+│-- controller.py # Core controller that orchestrates the system
+
+│-- face_manager.py # Handles loading student data and face encodings
+
+│-- student_tracker.py # Manages the real-time state of each student
+
+│-- behavior_analyzer.py # Simulates student behavior analysis
+
+│-- utils.py # Contains helper functions (e.g., report generation)
+
+│-- student_images/ # Directory for student images (e.g., 101.jpg)
+
+│ 
+  |-- 101.jpg
+
+│ -- ... 
+│-- students_db.csv # CSV database with student information -- requirements.txt # Required Python packages
 Getting Started
 Follow these steps to get StudyGuard running on your local machine.
 
@@ -107,17 +113,31 @@ BEHAVIOR_ANALYSIS_INTERVAL: The number of frames to buffer before running behavi
 
 FACE_MATCH_TOLERANCE: The strictness for face matching. Lower values (0.5) are stricter, while higher values (0.7) are more lenient. The default is 0.6.
 
-Contributing
-Contributions are welcome! If you'd like to improve StudyGuard, please feel free to fork the repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+🤝 Contributing
 
-Future Work
-[ ] Implement Real 3D-CNN: Train and integrate a real 3D-CNN model for accurate behavior analysis.
+Contributions are welcome!
 
-[ ] Database Integration: Replace the CSV database with a more robust database system like SQLite or PostgreSQL.
+Fork the repo
 
-[ ] Web-Based Dashboard: Create a web interface to display real-time statistics and view reports.
+Create a new branch (feature-xyz)
 
-[ ] Alerting System: Implement an alerting mechanism for specific behaviors (e.g., a student being absent for too long).
+Commit your changes
+
+Open a Pull Request
+
+For major changes, open an issue first to discuss your ideas.
+
+
+
+🔮 Future Work
+
+ Implement Real 3D-CNN: Train and integrate a real 3D-CNN model for accurate behavior analysis.
+
+ Database Integration: Replace the CSV database with a more robust database system like SQLite or PostgreSQL.
+
+ Web-Based Dashboard: Create a web interface to display real-time statistics and view reports.
+
+ Alerting System: Implement an alerting mechanism for specific behaviors (e.g., a student being absent for too long).
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
